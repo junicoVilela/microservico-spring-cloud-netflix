@@ -1,0 +1,37 @@
+server:
+  port: 8081
+  servlet:
+    context-path: /financeiro
+
+spring:
+  application:
+    name: financeiro
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+      dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+  jmx:
+    enabled: false
+  datasource:
+    url: jdbc:mariadb://localhost:3306/microservices_financeiro
+    username: root
+    password: root
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: admin
+    password: admin
+
+catalogo:
+  rabbitmq:
+    exchange: catalogo.exchange
+    queue: catalogo.produto.queue
+
+security:
+  jwt:
+    token:
+      secret-key: chave_microservices
