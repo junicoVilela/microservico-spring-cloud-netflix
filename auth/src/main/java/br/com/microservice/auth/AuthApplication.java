@@ -44,7 +44,7 @@ public class AuthApplication {
         }
 
         User admin = new User();
-        admin.setUsername("Valdemir");
+        admin.setUsername("valdemir");
         admin.setAccountNonExpired(true);
         admin.setAccountNonLocked(true);
         admin.setCredentialsNonExpired(true);
