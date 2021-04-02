@@ -11,6 +11,7 @@
         <module name="auth" />
         <module name="financeiro" />
         <module name="discovery" />
+        <module name="gateway" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -18,6 +19,7 @@
       <module name="catalogo" target="11" />
       <module name="discovery" target="11" />
       <module name="financeiro" target="11" />
+      <module name="gateway" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -26,6 +28,7 @@
       <module name="catalogo" options="-parameters" />
       <module name="discovery" options="-parameters" />
       <module name="financeiro" options="-parameters" />
+      <module name="gateway" options="-parameters" />
     </option>
   </component>
 </project>
